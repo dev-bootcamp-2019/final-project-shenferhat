@@ -1,5 +1,6 @@
 pragma solidity ^0.5.0;
 
+
 /** @title Education Pasaport Upload. */
 contract Upload {
 
@@ -28,6 +29,8 @@ contract Upload {
     function transferOwnership(address _newOwner) public stop_if_emergency onlyOwner {
         newOwner = _newOwner;
     }
+
+
 
     /** @dev Accepts ownership and frees new owners address. Triggers event to inform change of ownership.
       */
